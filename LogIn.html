@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SmartEdu</title>
+  <link rel="icon" href="img/logo1.png">
   <link rel="stylesheet" href="css/stylelogin.css">
 </head>
 <body> 
@@ -11,12 +15,12 @@
       <form action="user.html" method="post">
         <div class="text-center"><a href="index.html">SmartEdu</a></div>
         <div>
-          <input required type="text" name="user_name" id="name" placeholder="Username">
+          <input class="username" required type="text" name="user_name" id="name" placeholder="Username">
 
         </div>
 
         <div>
-          <input required type="password" name="user_password" id="password" placeholder="Password">
+          <input class="password" required type="password" name="user_password" id="password" placeholder="Password">
           
         </div>
 
@@ -27,6 +31,22 @@
     </div>
     
   </div>
+  <script src="js/jquery.min.js"></script>
+  <script type="text/javascript">
+    $('.btn-log-in').click(function() {
 
+
+      var username = $('.username').val();
+      var password = $('.password').val();
+
+      if (username != "" && password != "") {
+        alert('login berhasil');
+      } else {
+        alert('username dan password harap di isi');
+        return false;
+      }
+
+    })
+  </script>
 </body>
 </html>
