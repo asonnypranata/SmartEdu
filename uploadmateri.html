@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/stylegrid.css">
 </head>
 <body>
-<div id="mySidenav" class="sidenav">
+	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="index.html" class="color--white-1 semibold text--mini">Home</a>
-		<a href="ragamWisata.html" class="color--white-1 semibold text--mini">Live</a>
-		<a href="Live.html" class="color--white-1 semibold text--mini">Mentor</a>
+		<a href="MentorLog.html" class="color--white-1 semibold text--mini">Home</a>
+		<a href="Livenow.html" class="color--white-1 semibold text--mini">Live</a>
+		<a href="uploadmateri.html" class="color--white-1 semibold text--mini">Upload Materi</a>
 		<a href="index.html" class="color--white-1 semibold text--mini">Log Out</a>
 	</div>
 	<nav class="bg--smartedu">
@@ -21,13 +22,14 @@
 				</a>
 				<ul class="ul__list--inline float--right mt--3">
 					<li class="hidden--mobile mr--3"><a href="MentorLog.html" class="color--white-1 semibold text--mini">Home</a></li>
-					<li class="hidden--mobile mr--3"><a href=".html" class="color--white-1 semibold text--mini">Live</a></li>
-					<li class="hidden--mobile mr--3"><a href="Uploadm.html" class="color--white-1 semibold text--mini">Upload materi</a></li>
+					<li class="hidden--mobile mr--3"><a href="Livenow.html" class="color--white-1 semibold text--mini">Live</a></li>
+					<li class="hidden--mobile mr--3"><a href="uploadmateri.html" class="color--white-1 semibold text--mini">Upload materi</a></li>
 					<li class="hidden--mobile mr--3"><a href=".html" class="color--white-1 semibold text--mini"></a></li>
-					<li><a class="color--white-1 semibold text--mini">|</a></li>
+					<li class="hidden--mobile"><a class="color--white-1 semibold text--mini">|</a></li>
 					<li class="hidden--mobile "><a href="index.html" class="color--white-1 semibold text--mini">Log Out</a></li>
 					<li class="show--mobile"><span class="color--white-1 text--mini-18" style="cursor:pointer" onclick="openNav()"><i class="fa fa-th-list" aria-hidden="true"></i></span></li>
 				</ul>
+				<span class="float--right nav--res" style="font-size:30px;cursor:pointer:color:white" onclick="openNav()">&#9776;</span>
 			</nav>
 		</div>
 	</nav>
@@ -63,7 +65,7 @@
 									</div>
 								</div>
 							</form>
-							<a href=".html" class="btn_1">Submit</a>
+							<a href="MentorLog.html" class="btn_1">Submit</a>
 
 						</div>
 					</div>
@@ -71,7 +73,7 @@
 			</div>
 		</div>
 	</section>
-		<footer class="footer-area">
+	<footer class="footer-area">
 		<div id="kontak" class="container">
 			<div class="row">
 				<div class="col-3">
@@ -126,14 +128,23 @@
 						<div class="row">
 							<div class="col-12">
 								<p class="footer-text m-0">
-									Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by S </p>
-								</div>
+								Copyright 162410101010 | 1824101010 </p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
-		<script src="js/smaredu.js"></script>
+		</div>
+	</footer>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	<script src="js/smaredu.js"></script>
 </body>
 </html>

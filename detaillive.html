@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>SmartEdu</title>
+	<link rel="icon" href="img/logo1.png">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/stylegrid.css">
-</head>
 </head>
 <body>
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="index.html" class="color--white-1 semibold text--mini">Home</a>
-		<a href="ragamWisata.html" class="color--white-1 semibold text--mini">Live</a>
-		<a href="Live.html" class="color--white-1 semibold text--mini">Mentor</a>
-		<a href="index.html" class="color--white-1 semibold text--mini">Log Out</a>
+		<a href="#">Home</a>
+		<a href="#">Fitur</a>
+		<a href="#">Tentang Kami</a>
+		<a href="#">Kontak kami</a>
+		<a href="#">___________</a>
+		<a href="#">Get Started</a>
 	</div>
+
 	<nav class="bg--smartedu">
 		<div class="container p--relative" id="myHeader">
 			<nav class="p--3">
-				<a href="#!" class="brand--smartedu">
+				<a href="user.html" class="brand--smartedu">
 					<img src="img/logo.png" alt="logo">
 				</a>
-				<ul class="ul__list--inline float--right mt--3">
+				<ul class="ul__list--inline menu--nav float--right mt--3">
 					<li class="hidden--mobile mr--3"><a href="user.html" class="color--white-1 semibold text--mini">Home</a></li>
 					<li class="hidden--mobile mr--3"><a href="Live.html" class="color--white-1 semibold text--mini">Live</a></li>
 					<li class="hidden--mobile mr--3"><a href="Mentor.html" class="color--white-1 semibold text--mini">Mentor</a></li>
@@ -28,6 +35,7 @@
 					<li class="hidden--mobile "><a href="index.html" class="color--white-1 semibold text--mini">Log Out</a></li>
 					<li class="show--mobile"><span class="color--white-1 text--mini-18" style="cursor:pointer" onclick="openNav()"><i class="fa fa-th-list" aria-hidden="true"></i></span></li>
 				</ul>
+				<span class="float--right nav--res" style="font-size:30px;cursor:pointer:color:white" onclick="openNav()">&#9776;</span>
 			</nav>
 		</div>
 	</nav>
@@ -158,14 +166,23 @@
 						<div class="row">
 							<div class="col-12">
 								<p class="footer-text m-0">
-									Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by S </p>
-								</div>
+								Copyright 162410101010 | 1824101010 </p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
-		<script src="js/smaredu.js"></script>
-	</body>
-	</html>
+		</div>
+	</footer>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	<script src="js/smaredu.js"></script>
+</body>
+</html>
