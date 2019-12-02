@@ -53,50 +53,7 @@
               </div>
           </div>
       </div>
-      <div class="row">
-        <div class="col-4">
-            <div class="single-home-blog">
-                <div class="card">
-                    <img src="img/blog/blog_1.png" class="card-img-top" alt="blog">
-                    <div class="card-body">
-                        <a href="detaillive.html" class="btn_4">Matematika</a>
-                        <a href="detaillive.html">
-                            <h5 class="card-title">judul sub bab</h5>
-                        </a>
-                        <p>Blablablabla</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="single-home-blog">
-                <div class="card">
-                    <img src="img/blog/blog_2.png" class="card-img-top" alt="blog">
-                    <div class="card-body">
-                        <a href="detaillive.html" class="btn_4">BIOLOGI</a>
-                        <a href="detaillive.html">
-                            <h5 class="card-title">judul sub bab</h5>
-                        </a>
-                        <p>Blablablabla</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="single-home-blog">
-                <div class="card">
-                    <img src="img/blog/blog_3.png" class="card-img-top" alt="blog">
-                    <div class="card-body">
-                        <a href="detaillive.html" class="btn_4">Ekonomi</a>
-                        <a href="detaillive.html">
-                            <h5 class="card-title">judul sub bab</h5>
-                        </a>
-                        <p>Blablablablabla</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="row add__data__all">
         <div class="col-4">
             <div class="single-home-blog">
                 <div class="card">
@@ -142,7 +99,11 @@
         </div>
     </div>
 </div>
+<div class="" style="text-align: center;padding-top: 10px; padding-bottom: 10px;">
+    <a class="button button-contactForm btn_1 load-data" href="#!">Load Data</a>
+</div>
 </section>
+
 
 <footer class="footer-area">
     <div id="kontak" class="container">
@@ -217,6 +178,32 @@
   }
 </script>
 <script src="js/smaredu.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(".load-data").click(function () {
+        $.getJSON('https://raw.githubusercontent.com/lazuardii8/situwisata/master/data/artikel.json', function (data) {
+            console.log( data );
+            $.each(data, function (n, elem) {
+                console.log('foto '+elem['foto']+' - judul '+elem['judul']+' - detail '+elem['detail'])
+                $('.add__data__all').append(`    <div class="col-4">
+                    <div class="single-home-blog">
+                    <div class="card">
+                    <img src="img/blog/blog_2.png" class="card-img-top" alt="blog">
+                    <div class="card-body">
+                    <a href="detaillive.html" class="btn_4">BIOLOGI</a>
+                    <a href="detaillive.html">
+                    <h5 class="card-title">judul sub bab</h5>
+                    </a>
+                    <p>Blablablabla</p>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    `);
+            });
+        });
+    });
+</script>
 </body>
 
 </html>
