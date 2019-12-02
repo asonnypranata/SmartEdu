@@ -181,18 +181,18 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">
     $(".load-data").click(function () {
-        $.getJSON('https://raw.githubusercontent.com/lazuardii8/situwisata/master/data/artikel.json', function (data) {
+        $.getJSON('https://raw.githubusercontent.com/asonnypranata/SmartEdu/master/data/kelas.json', function (data) {
             console.log( data );
             $.each(data, function (n, elem) {
                 console.log('foto '+elem['foto']+' - judul '+elem['judul']+' - detail '+elem['detail'])
                 $('.add__data__all').append(`    <div class="col-4">
                     <div class="single-home-blog">
                     <div class="card">
-                    <img src="img/blog/blog_2.png" class="card-img-top" alt="blog">
+                    <img src="`+elem['foto']+`" class="card-img-top" alt="blog">
                     <div class="card-body">
-                    <a href="detaillive.html" class="btn_4">BIOLOGI</a>
+                    <a href="detaillive.html" class="btn_4">`+elem['kategori']+`</a>
                     <a href="detaillive.html">
-                    <h5 class="card-title">judul sub bab</h5>
+                    <h5 class="card-title">`+elem['judul']+`</h5>
                     </a>
                     <p>Blablablabla</p>
                     </div>

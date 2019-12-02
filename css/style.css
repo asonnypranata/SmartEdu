@@ -13,6 +13,121 @@
   text-align:center;
 }
 
+.modal{
+  z-index: 999;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.component--card-login{
+  border: 3px solid #6F77EF;
+}
+
+.overlay--modal{
+  background-color: #cccccc57;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  display: none;
+  z-index: 999;
+}
+
+.form--grup{
+  margin: 30px 0;
+}
+
+.form--grup label{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form--input{
+  width: 100%;
+  margin-top: .5rem;
+  height: 40px;
+  padding: 8px 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #dcdcdc;
+  transition: .5s;
+  color: #013450;
+}
+
+.form--input:hover{
+  box-shadow: 0px 5px 10px #dcdcdc;
+  border: 2px solid #013450;
+  background-color: white;
+}
+
+.form--input:focus{
+  box-shadow: 0px 5px 10px #dcdcdc;
+  border: 2px solid #013450;
+  background-color: white;
+}
+
+.form--input-blue-2{
+  width: 100%;
+  margin-top: .5rem;
+  height: 40px;
+  padding: 8px 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #6F77EF;
+  transition: .5s;
+  color: #6F77EF;
+}
+
+.form--input-blue-2:hover{
+  box-shadow: 0px 5px 10px #6F77EF;
+  border: 2px solid #6F77EF;
+  background-color: white;
+}
+
+.form--input-blue-2:focus{
+  box-shadow: 0px 5px 10px #6F77EF;
+  border: 2px solid #6F77EF;
+  background-color: white;
+}
+
+.form--textarea{
+  width: 100%;
+  margin-top: .5rem;
+  padding: 8px 5px;
+  border-radius: 5px;
+  border: 2px solid #dcdcdc;
+  transition: .5s;
+  color: #013450;
+  resize: none;
+  height: 200px;
+  transition: .5s;
+}
+
+.form--textarea:hover{
+  box-shadow: 0px 5px 10px #dcdcdc;
+  border: 2px solid #757575
+}
+
+.form--textarea:focus{
+  box-shadow: 0px 5px 10px #dcdcdc;
+  border: 2px solid #757575
+}
+
+.p--5{
+  padding: 3rem !important;
+}
+.modal-body{
+  background-color: white;
+  border-radius: 15px;
+}
+
+.modal-show{
+  display: block;
+}
+
+
 .textarea-1{
   height: 200px !important;
 }

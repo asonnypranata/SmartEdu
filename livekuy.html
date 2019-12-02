@@ -50,6 +50,55 @@
 						<h2>Judul Live :D
 						</h2>
 						<a href="MentorLog.html" class="button rounded-0 primary-bg text-white w-100 btn_1" type="submit">Akhiri Live</a>
+						<a href="#!" class="button rounded-0 primary-bg text-white w-100 btn_1 tambah__data__hotel" type="submit">Upload materi</a>
+						<div class="overlay--modal">
+							<div class="p--relative">
+								<div class="modal mt--5 mb--5">
+									<div class="modal-body">
+
+										<div class="component--card-login bg--white-1 p--5 radius-10">
+
+											<form action="">
+
+												<div class="form--grup mt--0">
+													<label class="color--blue-2">Judul</label>
+													<input type="text" class="form--input-blue-2">
+												</div>
+
+
+												<div class="form--grup mt--0 file--upload">
+													<label class="color--blue-2">Upload Materi anda</label>
+													<input type="file" class="form--input-blue-2">
+												</div>
+
+
+												<div class="form--grup mt--0">
+													<label class="color--blue-2">Kategori</label>
+													<select class="form--input-blue-2">
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+														<option>5</option>
+													</select>
+												</div>
+
+												<div class="form--grup mt--0">
+													<label class="color--blue-2">Deskripsi</label>
+													<textarea class="form--input-blue-2" style="height: 200px; resize: none;">
+
+													</textarea>
+												</div>
+
+												<button type="button" class="btn btn--blue-2 color--white-1 btn--login mx--auto d--inline-block mr--2">Submit</button>
+												<button type="button" class="btn btn--gray-1 color--blue-2 btn--login mx--auto d--inline-block modal--tutup">Tutup</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 					<div class="blog_right_sidebar">
 						<aside class="single_sidebar_widget search_widget">
@@ -177,6 +226,15 @@
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
 		}
+	</script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('.tambah__data__hotel').click(function () {
+			$('.overlay--modal').addClass('modal-show');
+		});
+		$('.modal--tutup').click(function () {
+			$('.overlay--modal').removeClass('modal-show');
+		});
 	</script>
 	<script src="js/smaredu.js"></script>
 </body>
