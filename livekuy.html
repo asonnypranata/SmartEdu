@@ -50,7 +50,7 @@
 						<h2>Judul Live :D
 						</h2>
 						<a href="MentorLog.html" class="button rounded-0 primary-bg text-white w-100 btn_1" type="submit">Akhiri Live</a>
-						<a href="#!" class="button rounded-0 primary-bg text-white w-100 btn_1 tambah__data__hotel" type="submit">Upload materi</a>
+						<a href="#!" class="button rounded-0 primary-bg text-white w-100 btn_1 tambah__data__materi" type="submit">Upload materi</a>
 						<div class="overlay--modal">
 							<div class="p--relative">
 								<div class="modal mt--5 mb--5">
@@ -90,8 +90,8 @@
 													</textarea>
 												</div>
 
-												<button type="button" class="btn btn--blue-2 color--white-1 btn--login mx--auto d--inline-block mr--2">Submit</button>
-												<button type="button" class="btn btn--gray-1 color--blue-2 btn--login mx--auto d--inline-block modal--tutup">Tutup</button>
+												<button type="button" class="btn btn--yellow-2 color--white-1 btn--login mx--auto d--inline-block mr--2">Submit</button>
+												<button type="button" class="btn btn--gray-1 color--yellow-2 btn--login mx--auto d--inline-block modal--tutup">Tutup</button>
 											</form>
 										</div>
 									</div>
@@ -229,11 +229,12 @@
 	</script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript">
-		$('.tambah__data__hotel').click(function () {
-			$('.overlay--modal').addClass('modal-show');
+		$('.tambah__data__materi').click(function () {
+			$('.overlay--modal').addClass('showModal');
 		});
 		$('.modal--tutup').click(function () {
-			$('.overlay--modal').removeClass('modal-show');
+			$('.overlay--modal').addClass('hideModal');
+			$('.overlay--modal').removeClass('showModal');
 		});
 	</script>
 	<script src="js/smaredu.js"></script>

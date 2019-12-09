@@ -12,7 +12,9 @@
   padding-top: 60px;
   text-align:center;
 }
-
+.image--preview{
+  max-width: 135px;
+}
 .modal{
   z-index: 999;
   margin: 0 auto;
@@ -20,7 +22,7 @@
 }
 
 .component--card-login{
-  border: 3px solid #6F77EF;
+  border: 3px solid #ffab63;
 }
 
 .overlay--modal{
@@ -31,8 +33,50 @@
   right: 0;
   bottom: 0;
   overflow-y: scroll;
-  display: none;
-  z-index: 999;
+  opacity: 0;
+  z-index: -1;
+}
+
+.hideModal{
+  z-index:-1;
+  opacity:0;
+  animation: hide .25s;
+
+  transform: scale(0);
+}
+@keyframes hide {
+  from{
+    z-index:2;
+    transform: scale(1);
+    opacity:1;
+  } 
+  to{
+    z-index:-1;
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+.showModal{
+  opacity:1;
+  z-index:2;
+  animation: show .2s;
+
+  transform: scale(1);
+}
+
+@keyframes show {
+  from{
+
+    transform: scale(0);
+    opacity:0;
+    z-index:-1;
+  } 
+  to{
+
+    transform: scale(1);
+    opacity: 1;
+    z-index:2;
+  }
 }
 
 .form--grup{
@@ -75,20 +119,20 @@
   padding: 8px 5px;
   background-color: transparent;
   border-radius: 5px;
-  border: 2px solid #6F77EF;
+  border: 2px solid #ffab63;
   transition: .5s;
-  color: #6F77EF;
+  color: #000000;
 }
 
 .form--input-blue-2:hover{
-  box-shadow: 0px 5px 10px #6F77EF;
-  border: 2px solid #6F77EF;
+  box-shadow: 0px 5px 10px #ff663b;
+  border: 2px solid #ff663b;
   background-color: white;
 }
 
 .form--input-blue-2:focus{
-  box-shadow: 0px 5px 10px #6F77EF;
-  border: 2px solid #6F77EF;
+  box-shadow: 0px 5px 10px #ffe003;
+  border: 2px solid #ff663b;
   background-color: white;
 }
 
@@ -964,7 +1008,7 @@ ul {
 
 
 .blog_area a {
-  color: #666666 !important;
+  color: #ffffff !important;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -7677,4 +7721,44 @@ h1, h2, h3, h4, h5, h6 {
 .position-relative{
   position: relative;
   display: inline-block;
+}
+
+.btn{
+  border: none;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: .5s;
+}
+.btn--yellow-2{
+  background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
+  transition: .5s;
+}
+.btn--yellow-2:hover{
+  box-shadow: 0px 10px 30px RGBA(111, 119, 239, 0.36);
+}
+.btn--gray-1{
+  background-color: #CCCCCC;
+  transition: .5;
+  opacity: .5;
+}
+
+.btn--gray-1:hover{
+  opacity: 1;
+}
+.btn--login{
+  padding: 10px 30px;
+}
+.color--white-1{
+  color: white;
+}
+.mx--auto{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.d--inline-block{
+  display: inline-block;
+}
+.mr--2{
+  margin-right: .5rem !important;
 }
